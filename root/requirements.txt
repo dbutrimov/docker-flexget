@@ -1,0 +1,5 @@
+# Plugins
+python-telegram-bot
+
+# Install flexget last (it might force specific versions of other packages)
+flexget

@@ -1,0 +1,17 @@
+#!/usr/bin/with-contenv bash
+
+pip install -U pip
+
+if [ ! -z "$PIP_REQUIREMENTS_FILE" ]; then
+    while IFS= read -r line; do
+        if [ ! -z "$line" ] && [[ "$line" != \#* ]]; then
+            pip install -U "$line"
+        fi
+    done < "$PIP_REQUIREMENTS_FILE"
+fi
+
+while IFS= read -r line; do
+    if [ ! -z "$line" ] && [[ "$line" != \#* ]]; then
+        pip install -U "$line"
+    fi
+done < /requirements.txt

@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+s6-setuidgid abc /usr/local/bin/flexget \
+    -c "/config/config.yml" \
+    daemon stop
