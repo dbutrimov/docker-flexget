@@ -15,8 +15,8 @@ RUN \
   echo "**** cleanup ****" && \
   rm -rf \
     /tmp/* \
-  	/var/lib/apt/lists/* \
-  	/var/tmp/*
+    /var/lib/apt/lists/* \
+    /var/tmp/*
 
 # add local files
 COPY root/ /
