@@ -13,5 +13,6 @@ fi
 
 s6-setuidgid abc /usr/local/bin/flexget \
     -c "/config/config.yml" \
+    --logfile "${FLEXGET_LOG_FILE:-flexget.log}" \
     --loglevel "${FLEXGET_LOG_LEVEL:-info}" \
     daemon start --autoreload-config
