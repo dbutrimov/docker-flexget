@@ -1,4 +1,4 @@
-FROM lsiobase/ubuntu:bionic
+FROM lsiobase/ubuntu:jammy
 
 # environment variables
 ARG DEBIAN_FRONTEND="noninteractive"
